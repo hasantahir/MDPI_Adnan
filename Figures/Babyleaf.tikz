@@ -1,0 +1,30 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=4,
+ymin=0,
+ymax=3,
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids
+]
+\addplot [color=green, dashed, line width=1.3pt, mark=asterisk, mark options={solid, green}, forget plot]
+  table[row sep=crcr]{%
+1	2.88110875641547\\
+2	2.50772285110668\\
+3	0.893132174557659\\
+4	0.806615062137833\\
+};
+\end{axis}
+\end{tikzpicture}%

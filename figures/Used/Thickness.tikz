@@ -1,0 +1,117 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.89412,0.10196,0.10980}%
+\definecolor{mycolor2}{rgb}{0.21569,0.49412,0.72157}%
+\definecolor{mycolor3}{rgb}{0.30196,0.68627,0.29020}%
+\definecolor{mycolor4}{rgb}{0.59608,0.30588,0.63922}%
+\definecolor{mycolor5}{rgb}{1.00000,0.49804,0.00000}%
+\definecolor{mycolor6}{rgb}{1.00000,1.00000,0.20000}%
+\definecolor{mycolor7}{rgb}{0.65098,0.33725,0.15686}%
+\definecolor{mycolor8}{rgb}{0.96863,0.50588,0.74902}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+xmin=1,
+xmax=4,
+xlabel style={font=\color{white!15!black}},
+xlabel={Time (day)},
+ymin=0,
+ymax=0.3,
+ytick={0,.1,.2,.3},
+yticklabels={{0},{0.1},{0.2},{0.3}},
+ylabel style={font=\color{white!15!black}},
+ylabel={Thickness (mm)},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot [color=mycolor1, mark=asterisk, mark options={solid, red}]
+  table[row sep=crcr]{%
+1	0.16\\
+2	0.14\\
+3	0.11\\
+4	0.1\\
+};
+\addlegendentry{Baby Leaf}
+
+\addplot [color=mycolor2, dashed]
+  table[row sep=crcr]{%
+1	0.26\\
+2	0.18\\
+3	0.12\\
+4	0.1\\
+};
+\addlegendentry{Basil}
+
+\addplot [color=mycolor3]
+  table[row sep=crcr]{%
+1	0.2\\
+2	0.18\\
+3	0.09\\
+4	0.08\\
+};
+\addlegendentry{Coffee}
+
+\addplot [color=mycolor3, mark=asterisk, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+1	0.16\\
+2	0.15\\
+3	0.07\\
+4	0.07\\
+};
+\addlegendentry{Coriander}
+
+\addplot [color=mycolor4, mark=asterisk, mark options={solid, green}]
+  table[row sep=crcr]{%
+1	0.25\\
+2	0.2\\
+3	0.07\\
+4	0.05\\
+};
+\addlegendentry{Lamb Lettuce}
+
+\addplot [color=mycolor5]
+  table[row sep=crcr]{%
+1	0.15\\
+2	0.14\\
+3	0.13\\
+4	0.08\\
+};
+\addlegendentry{Mint}
+
+\addplot [color=mycolor6]
+  table[row sep=crcr]{%
+1	0.16\\
+2	0.14\\
+3	0.11\\
+4	0.1\\
+};
+\addlegendentry{Parsley}
+
+\addplot [color=mycolor7, mark=asterisk, mark options={solid, black}]
+  table[row sep=crcr]{%
+1	0.19\\
+2	0.14\\
+3	0.09\\
+4	0.09\\
+};
+\addlegendentry{Peashoot}
+
+\addplot [color=mycolor8]
+  table[row sep=crcr]{%
+1	0.13\\
+2	0.11\\
+3	0.1\\
+4	0.09\\
+};
+\addlegendentry{Baby Spinach}
+
+\end{axis}
+\end{tikzpicture}%
